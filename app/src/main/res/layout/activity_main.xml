@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="5dp"
+            android:layout_height="400dp"
+            android:layout_marginLeft="50dp"
+            android:background="color/darker_gray" />
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linear1">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/teamA"
+                android:text="Team A"
+                android:textColor="#FF8D00"
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:id="@+id/scoreA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="20dp"
+                android:text="0"
+                android:textSize="50dp" />
+
+            <Button
+                android:id="@+id/points3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:background="#FF8D00"
+                android:text="+3 points"
+                android:onClick="increment3"
+
+                />
+
+            <Button
+                android:id="@+id/points2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:background="#FF8D00"
+                android:text="+2 points"
+                android:onClick="increment2"/>
+
+            <Button
+                android:id="@+id/points1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:background="#FF8D00"
+                android:text="FREE THROW"
+                android:onClick="increment1"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Team B"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#FF8D00"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/scoreB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="20dp"
+                android:text="0"
+                android:textSize="50dp"
+                />
+
+            <Button
+                android:id="@+id/puntos3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:background="#FF8D00"
+                android:text="+3 points"
+                android:onClick="incrementar3"
+                />
+
+            <Button
+                android:id="@+id/puntos2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:background="#FF8D00"
+                android:text="+2 points"
+                android:onClick="incrementar2"/>
+
+            <Button
+                android:id="@+id/puntos1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:background="#FF8D00"
+                android:text="FREE THROW"
+                android:onClick="incrementar1"
+                />
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
